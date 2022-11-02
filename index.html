@@ -1,13 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Git</title>
-    <link rel="stylesheet" href="style.css">
+<style>
+div
+{
+
+ width:max-content;
+height:max-content;
+padding:50px;
+border-radius:20px;
+background-color:rgba(0,0,0,0.8)
+}
+h1
+{
+color:white;
+}
+h2
+{
+color:white;
+}
+
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 20rem;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+	padding-top:20px;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 20rem;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+</style>
 </head>
 <body>
-    <h1> Learning Github</h1>
+<div>
+<h1 class="line-1 anim-typewriter">Name:Hafiz Umair <br><br> Reg: SP19-bcs-043  </h1>
+</div>
 </body>
 </html>
